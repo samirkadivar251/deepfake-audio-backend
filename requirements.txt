@@ -2,11 +2,13 @@ fastapi
 uvicorn[standard]
 torch
 torchvision
+torchaudio
 librosa
 numpy
 pillow
-python-multipart
 soundfile
 aiofiles
 python-multipart
 pydub
+tqdm
+scipy
