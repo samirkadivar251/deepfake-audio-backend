@@ -2,7 +2,5 @@ services:
   - type: web
     name: deepfake-audio-backend
     env: python
-    region: singapore
-    plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "uvicorn deepfake_api:app --host 0.0.0.0 --port 10000"
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn deepfake_api:app --host 0.0.0.0 --port $PORT
